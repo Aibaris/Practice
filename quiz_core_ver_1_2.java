@@ -1,8 +1,8 @@
-package java_quiz;//change it to make it work
+package java_quiz;// change it for your package
 import java.util.Random;
 import java.util.Scanner;
 
-public class quiz_core_ver_1_2 { //class name must be the same as name of the .java file
+public class quiz_core_ver_1_2 {//change it for you class name
 
     public static void main(String[] args) {
 
@@ -41,45 +41,66 @@ public class quiz_core_ver_1_2 { //class name must be the same as name of the .j
         String question_28  ="Question 28: When does a Development Team member become the sole owner of a Sprint Backlog item?  \n1. At the Sprint planning meeting.\n2. During the Daily Scrum.\n3. Never. All Sprint Backlog Items are \"owned\" by the entire Development Team, even though each one may be implemented by an individual development team member.\n4. Whenever a team member can accommodate more work";
         String question_29  ="Question 29: Who is required to attend the Daily Scrum?  \n1. The Development Team and Product Owner.\n2. The Development team.\n3. The Scrum Master and Product Owner.\n4. The Development Team and Scrum Master.";
         String question_30  ="Question 30: Which of the following services are appropriate for a Scrum Master in regard to the Daily Scrum?  \n1. Facilitate in a way that ensures each team member has a chance to speak.\n2. Teach the Development Team to keep the Daily Scrum within the 15 minute time-box.\n3. Lead the discussions of the Development Team.\n4. All answers apply.";
+        String question_31  ="Question 31: Which statement best describes a Product Owner's responsibility? \n1. Managing the project and ensuring that the work meets the commitments to the stakeholders\n2. Optimizing the value of the work the Development team does\n3. Keep stakeholders from distracting the Development team\n4. Directing the Development team";
+        String question_32  ="Question 32: Upon what type of process control is Scrum based?\n1. Defined\n2. Complex\n3. Empirical\n4. Hybrid";
+        String question_33  ="Question 33: Is it mandatory that the product increment be released to production at the end of each sprint?\n1. True\n2. False";
+        String question_34  ="Question 34: Which statement best describes the Sprint review?\n1. It is a mechanism to control the Development Team's activities during the Sprint.\n2. It is a demo at the end of the Sprint for everyone in the organization to check on the work done.\n3. It is when the Scrum Team and stakeholders inspect the outcome of a Sprint and figure out what to do next.";
+        String question_35  ="Question 35: Why is the Daily Scrum held at the same time and same place?\n1. Product owner demands it.\n2. The place can be named.\n3. Rooms are hard to book and this lets it be booked in advance.\n4. the consistency reduces complexity";
+        String question_36  ="Question 36: The Development Team should have all the skills needed to....\n1. Turn the Product Backlog items it selects into an increment of potentially releasable product functionality \n2. Do all of the Development work, except for specialized testing that requires additional tools and environments. \n3. Complete the project as estimated when the date and cost are committed to the Product Owner";
+        String question_37  ="Question 37: What does it mean to say that an event has a time-box?\n1. The event can take no more than a maximum amount of time.\n2. The event must happen at a set time.\n3. The event must take at least a minimum amount of time\n4. The event must happen by a given time.";
+        String question_38  ="Question 38: The Scrum Team should choose at least on high priority process improvement, identified during the Sprint Retrospective, and place it in the Product Backlog.\n1. True.\n2. False.";
+        String question_39  ="Question 39: Scrum does not have a role called \"Project Manager.\"\n1. True.\n2. False.";
+        String question_40  ="Question 40: The maximum length of the Sprint Review(its time-box) is:\n1. 2 hours.\n2. 1 day.\n3. 4 hours for a monthly Sprint. For shorter Sprints it is usually shorter.\n4. As long as needed.";
+        String question_41  ="Question 41: The  purpose of a Sprint is to produce a done increment of working product\n1. True.\n2. False.";
+        String question_42  ="Question 42: What is the role of Management in Scrum?\n1. Identify and remove people that aren't working hard enough.\n2. Support the Product Owner with insights and information into a high value product and system capabilities. Support the Scrum Master to cause organizational change that fosters empiricism, self-organization, bottom-up, and intelligent release of software.\n3. Monitor the Development Team's productivity.\n4. Continually monitor staffing levels of the Development team.";
+        String question_43  ="Question 43: Who has the final say on the order of the Product Backlog?\n1. The Scrum Master.\n2. The Product Owner.\n3. The Stakeholders.\n4. The Development Team";
+        String question_44  ="Question 44: The CEO asks the Development Team to add a \"Very Important\" item to a Sprint that is in progress. What should the Development Team do?\n1. Inform the Product Owner so he/she can work with the CEO.\n2. Add the item to the next Sprint.\n3. Add the item to the current Sprint and drop an item of the equal size.\n4. Add the item to the current Sprint without any adjustments.";
+        String question_45  ="Question 45: Who should know the most about the progress toward a busyness objective or a release, and be able to explain the alternatives more clearly?\n1. The Scrum Master\n2. The Project Manager\n3. The Product Owner\n4. The Development Team";
+        String question_46  ="Question 46: Who should do the Development Team during the first Sprint?\n1. Develop and deliver at least one piece of functionality\n2. Determinate the complete architecture and infrastructure of the product.\n3. Create the complete Product Backlog to be developed in subsequent Sprints.\n4. Develop a plan for the rest of the release.";
+        String question_47  ="Question 47: Which event is time-boxed according to the Scrum guide?\n1. Sprint review\n2. Sprint testing\n3. Design Sprint\n4. Release Retrospective.";
+        String question_48  ="Question 48: The time-box for a Daily Scrum is?\n1. Two minutes per person\n2. 15 minutes\n3. 4 hours\n4. The same time of day every day.";
+        String question_49  ="Question 49: In an Agile environment, what is the main responsibility of a tester?\n1. Create test scenarios and test cases\n2. Create automation scripts\n3. Finding bugs\n4. There is no role as a Tester in Scrum";
+        String question_50  ="Question 50: When is a Sprint Retrospective ceremony performed?\n1. Whenever the team suggests\n2. At the end of each Sprint\n3. Whenever needed\n4. Whenever the Product Owner suggests";
+
 
         String name = "";//declaring the user name
         Scanner input = new Scanner(System.in);//setting the scanner
         System.out.println("Welcome to the Agile quiz!");
         System.out.println("Here you can check your Agile knowledge");
-        System.out.println("You have 3 lives, after 3 wrong answers your quiz will be over \nOn other hand, each life that you have saved trough the end - will give you 5 extra points!");
+        System.out.println("You have 3 lives, after 3 wrong answers your quiz will be over ");
         System.out.println("============================================================================= "+"\n\n");
         System.out.println("Please enter your name:");
         name = input.next();// User name input
         System.out.println("Hello "+name+ "! Let's get started!");
         // here I declare an array with a questions that not answered yet
-        String[] quiz = {question_1, question_2, question_3, question_4, question_5, question_6, question_7,question_8,question_9,question_10, question_11, question_12, question_13, question_14, question_15, question_16, question_17, question_18, question_19,question_20, question_21, question_22, question_23, question_24, question_25, question_26, question_27, question_28, question_29, question_30};
-        int[] answers = {4, 4, 4, 3, 3, 3, 4, 4, 4, 1, 1, 4, 1, 3, 3, 4, 3, 1, 3, 3, 2, 3, 3, 4, 4, 4, 3, 3, 2, 2}; // correct answers
+        String[] quiz = {question_1, question_2, question_3, question_4, question_5, question_6, question_7,question_8,question_9,question_10, question_11, question_12, question_13, question_14, question_15, question_16, question_17, question_18, question_19,question_20, question_21, question_22, question_23, question_24, question_25, question_26, question_27, question_28, question_29, question_30, question_31, question_32, question_33, question_34, question_35, question_36, question_37, question_38, question_39, question_40, question_41, question_42, question_43, question_44, question_45, question_46, question_47, question_48, question_49,question_50};
+        int[] answers = {4, 4, 4, 3, 3, 3, 4, 4, 4, 1, 1, 4, 1, 3, 3, 4, 3, 1, 3, 3, 2, 3, 3, 4, 4, 4, 3, 3, 2, 2, 2, 3, 2, 3, 4, 1, 1, 2, 1, 3, 1, 2, 2, 1, 3, 1, 1, 2, 4, 2}; // correct answers
 
         Random random = new Random();//import and declaring a random
-        int random_index;
-        int[] printed_questions = new int[quiz.length];//declaring random index(limits for random searching)
+        int random_index; //declaring random index(limits for random searching)
+        int[] printed_questions = new int[quiz.length]; //array for answered questions
 
 
         boolean isEqual = false;
         while (!isEqual && life > 0){//loop that will work when you have a lives
 
             for (int i = 0; i < printed_questions.length && life > 0 ; i++){
-                random_index =  random.nextInt(quiz.length);
+                random_index =  random.nextInt(quiz.length);//call for random
                 if (printed_questions[random_index] != 10 && life > 0){
-                    printed_questions[random_index] = 10;
+                    printed_questions[random_index] = 10;//just a random number, changeable, no impact
 
-                    System.out.println(quiz[random_index]);
+                    System.out.println(quiz[random_index]); //printing a random question
                     System.out.println(name+" press 1, 2, 3 or 4 to answer");
-                    q = input.nextInt();
+                    q = input.nextInt(); //users input
 
 
                     if (q != answers[random_index]){
                         System.out.println("Your answer is incorrect");
-                        life = life - 1;
+                        life = life - 1;//incorrect answer - decreasing lives
                     }
                     else {
                         score = score + 1;
-                        System.out.println("Your answer is correct!");
+                        System.out.println("Your answer is correct!");//correct answer - adding the score
                     }
                     for (int n = 0; n < printed_questions.length - 1; n++){
                         if (printed_questions[n] == printed_questions[n+1]){
